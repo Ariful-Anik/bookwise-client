@@ -1,0 +1,15 @@
+.book-details {
+    padding: 20px;
+  }
+  
+  .book-header {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .book-cover {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+  }
+  

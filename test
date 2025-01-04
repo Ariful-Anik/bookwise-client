@@ -1,0 +1,55 @@
+// import { useEffect, useState } from "react";
+// import { fetchBooks } from "../api/bookApi";
+// import Header from "../components/Header";
+// import "../styles/Homepage.css";
+// import { NavLink } from "react-router-dom";
+
+// const Homepage = () => {
+//   const [books, setBooks] = useState([]);
+
+//   useEffect(() => {
+//     const getBooks = async () => {
+//       const data = await fetchBooks();
+//       setBooks(data);
+//     };
+//     getBooks();
+//   }, []);
+
+//   return (
+//     <div className="homepage">
+//       <Header />
+//       <section className="categories">
+//         <h2>Categories</h2>
+//         {/* Static categories */}
+//         <div className="category-grid">
+//           <div className="category">Fiction</div>
+//           <div className="category">Non-Fiction</div>
+//           <div className="category">Romance</div>
+//           <div className="category">Science</div>
+//         </div>
+//       </section>
+//       <section className="featured-books">
+//         <h2>Featured Books</h2>
+//         <div className="book-grid">
+//           {books.map((book) => (
+//             <div key={book.id} className="book">
+//               <img src={book.coverImage} alt={book.title} />
+//               <h3>{book.title}</h3>
+//               <p>{book.author}</p>
+//               <button>
+//                 <NavLink
+//                   to={`/book/${book.id}`}
+//                   className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+//                 >
+//                   Book Details
+//                 </NavLink>
+//               </button>
+//             </div>
+//           ))}
+//         </div>
+//       </section>
+//     </div>
+//   );
+// };
+
+// export default Homepage;
