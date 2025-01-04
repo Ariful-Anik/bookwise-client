@@ -1,13 +1,14 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow-lg">
-      <header className="mx-12 p-4 flex justify-between items-center">
+      <header className=" w-11/12 mx-auto p-4 flex justify-between items-center">
         {/* Logo */}
         <div className="logo text-3xl font-extrabold flex items-center space-x-2">
-          <span className="material-icons text-4xl">BookWise</span>
+          <NavLink to='/'><span className="material-icons text-4xl">BookWise</span></NavLink>
         </div>
 
         {/* Navigation Menu */}

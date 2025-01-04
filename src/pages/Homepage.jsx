@@ -29,11 +29,11 @@ const Homepage = () => {
   };
 
   return (
-    <div className="homepage w-11/12 mx-auto">
+    <div className="homepage w- mx-auto">
       <Header />
       
       {/* Categories Section */}
-      <section className="categories py-8 bg-gray-100">
+      <section className="categories py-8 ">
         <h2 className="text-3xl font-semibold text-center mb-6">Categories</h2>
         <div className="flex justify-center gap-4">
           {categories.map((category) => (
@@ -49,7 +49,7 @@ const Homepage = () => {
       </section>
 
       {/* Featured Books Section */}
-      <section className="featured-books py-8 container mx-auto">
+      <section className="featured-books py-8 w-10/12 mx-auto bg-gradient-to-r from-indigo-100 via-purple-200 to-pink-100">
         <h2 className="text-3xl font-semibold text-center mb-6">Featured Books</h2>
 
         <div className="mb-6 text-center">
@@ -73,11 +73,11 @@ const Homepage = () => {
               <img
                 src={book.coverImage}
                 alt={book.title}
-                className="w-full h-56 object-cover rounded-md mb-4"
+                className="w-full h-64 object-contain rounded-md mb-4"
               />
               <h3 className="text-xl font-semibold mb-2">{book.title}</h3>
               <p className="text-gray-500 mb-4">{book.author}</p>
-              <p className="text-gray-600 mb-4 text-xl">{book.price} $</p>
+              <p className="text-gray-600 mb-4 text-xl">{book.price} Taka</p>
               <NavLink
                 to={`/book/${book.id}`}
                 className="btn btn-primary text-white w-full mt-2"
